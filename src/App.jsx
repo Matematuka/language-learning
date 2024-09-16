@@ -1,7 +1,22 @@
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import HomePage from "./pages/HomePage/HomePage";
+import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
+import Layout from "./components/Layout/Layout";
+import TeachersPage from "./pages/TeachersPage/TeachersPage";
 
 function App() {
-  return <></>;
+  return (
+    <Layout>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/teachers" element={<TeachersPage />} />
+        <Route path="/favorites" element={<FavoritesPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </Layout>
+  );
 }
 
 export default App;
