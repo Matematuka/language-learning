@@ -1,10 +1,12 @@
+import Filters from "../../components/Filters/Filters";
 import TeachersList from "../../components/TeachersList/TeachersList";
 
 const TeachersPage = () => {
   return (
-    <div>
+    <>
+      <Filters />
       <TeachersList />
-    </div>
+    </>
   );
 };
 
