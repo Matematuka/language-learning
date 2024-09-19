@@ -1,5 +1,25 @@
-const Layout = () => {
-  return <div>Layout</div>;
+import { useLocation } from "react-router-dom";
+import AppBar from "../AppBar/AppBar";
+import css from "./Layout.module.css";
+
+const Layout = ({ children }) => {
+  const location = useLocation();
+
+  const isGreyBackground =
+    location.pathname === "/teachers" || location.pathname === "/favorites";
+
+  return (
+    <>
+      <AppBar />
+      <div
+        className={
+          isGreyBackground ? css.greyBackground : css.defaultBackground
+        }
+      >
+        <main className={css.content}>{children}</main>
+      </div>
+    </>
+  );
 };
 
 export default Layout;

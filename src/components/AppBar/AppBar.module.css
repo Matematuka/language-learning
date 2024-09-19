@@ -1,0 +1,16 @@
+.wrapperMain {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  width: 1184px;
+  margin: 20px auto;
+  background: var(--primary-white-color);
+}
+
+.wrapperNav {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}

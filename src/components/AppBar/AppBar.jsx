@@ -1,5 +1,16 @@
+import css from "./AppBar.module.css";
+import AuthNav from "../AuthNav/AuthNav";
+import UserMenu from "../UserMenu/UserMenu";
+import Logo from "../Logo/Logo";
+
 const AppBar = () => {
-  return <div>AppBar</div>;
+  return (
+    <header className={css.wrapperMain}>
+      <Logo />
+      <UserMenu />
+      <AuthNav />
+    </header>
+  );
 };
 
 export default AppBar;
