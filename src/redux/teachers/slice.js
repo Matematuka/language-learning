@@ -19,7 +19,7 @@ const teachersSlice = createSlice({
 
   extraReducers: (builder) => {
     builder
-      // fetchTeachers
+
       .addCase(fetchTeachers.pending, handlePending)
       .addCase(fetchTeachers.fulfilled, (state, action) => {
         state.loading = false;
