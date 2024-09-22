@@ -1,21 +1,14 @@
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { createContext, useState, useCallback, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import css from "./modalContext.module.css";
 import Modal from "../../src/components/Modal/Modal";
 
-const modalContext = createContext();
-export const useModal = () => useContext(modalContext);
+export const modalContext = createContext();
 
 export const ModalProvider = ({ children }) => {
   const [modalContent, setModalContent] = useState(null);
   const backdropRef = useRef(null);
+
   const closeModal = useCallback((evt) => {
     if (
       (evt && evt.target === evt.currentTarget) ||
@@ -47,9 +40,6 @@ export const ModalProvider = ({ children }) => {
   const openModal = (content) => {
     document.body.style.overflow = "hidden";
     setModalContent(content);
-    setTimeout(() => {
-      backdropRef.current.style.opacity = 1;
-    }, 0);
   };
 
   return (

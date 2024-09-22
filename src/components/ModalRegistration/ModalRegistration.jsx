@@ -1,4 +1,4 @@
-import { useModal } from "../../context";
+import { useModal } from "../../context/useModal.js";
 import ModalLogin from "../ModalLogin/ModalLogin";
 import RegistrationForm from "../RegistrationForm/RegistrationForm";
 import css from "./ModalRegistration.module.css";

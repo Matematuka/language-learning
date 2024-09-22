@@ -2,7 +2,7 @@ import { useState } from "react";
 import css from "./MobileMenu.module.css";
 import Icon from "../../shared/Icon/Icon";
 import { NavLink } from "react-router-dom";
-import { useModal } from "../../context";
+import { useModal } from "../../context/useModal";
 import ModalLogin from "../ModalLogin/ModalLogin";
 import ModalRegistration from "../ModalRegistration/ModalRegistration";
 import ModalLogout from "../ModalLogout/ModalLogout";

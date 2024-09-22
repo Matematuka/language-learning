@@ -1,5 +1,5 @@
 import css from "./Modal.module.css";
-import { useModal } from "../../context";
+import { useModal } from "../../context/useModal";
 import Icon from "../../shared/Icon/Icon";
 
 const Modal = ({ children }) => {

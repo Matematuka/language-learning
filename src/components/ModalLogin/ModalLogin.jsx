@@ -1,6 +1,6 @@
 import LoginForm from "../LoginForm/LoginForm";
 import css from "./ModalLogin.module.css";
-import { useModal } from "../../context/modalContext.jsx";
+import { useModal } from "../../context/useModal.js";
 import ModalRegistration from "../ModalRegistration/ModalRegistration.jsx";
 
 const ModalLogin = () => {

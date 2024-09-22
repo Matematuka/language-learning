@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { useModal } from "../../context";
+import { useModal } from "../../context/useModal.js";
 import Icon from "../../shared/Icon/Icon";
 import ModalLogin from "../ModalLogin/ModalLogin";
 import ModalRegistration from "../ModalRegistration/ModalRegistration";

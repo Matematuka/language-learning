@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { useState } from "react";
-import { useModal } from "../../context";
+import { useModal } from "../../context/useModal.js";
 
 const BookingForm = () => {
   const [selectedReason, setSelectedReason] = useState("");
@@ -48,16 +48,16 @@ const BookingForm = () => {
     },
   });
 
-  const onSubmit = (data, e) => {
+  const onSubmit = (data, evt) => {
     console.log(data);
     setSelectedReason("");
     reset();
-    closeModal(e);
+    closeModal(evt);
     notify();
   };
 
-  const handleRadioChange = (event) => {
-    setSelectedReason(event.target.value);
+  const handleRadioChange = (evt) => {
+    setSelectedReason(evt.target.value);
   };
 
   return (

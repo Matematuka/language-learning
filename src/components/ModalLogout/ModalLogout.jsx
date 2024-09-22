@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import css from "./ModalLogout.module.css";
 import useAuthActions from "../../firebaseHelpers/firebaseAuth.js";
-import { useModal } from "../../context/modalContext.jsx";
+import { useModal } from "../../context/useModal.js";
 import { useNavigate } from "react-router-dom";
 
 const ModalLogout = () => {

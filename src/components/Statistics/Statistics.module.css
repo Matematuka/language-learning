@@ -3,7 +3,7 @@
   box-sizing: border-box;
   border: 1.5px dashed var(--orange-color);
   border-radius: 30px;
-  width: 100%;
+  min-width: 100%;
 
   @media screen and (min-width: 768px) {
     padding: 40px 64px;

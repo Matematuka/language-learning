@@ -6,7 +6,7 @@ import { useState } from "react";
 import Icon from "../../shared/Icon/Icon";
 import css from "./RegistrationForm.module.css";
 import useAuthActions from "../../firebaseHelpers/firebaseAuth.js";
-import { useModal } from "../../context/modalContext.jsx";
+import { useModal } from "../../context/useModal.js";
 
 const RegistrationForm = () => {
   const [showPassword, setShowPassword] = useState(false);

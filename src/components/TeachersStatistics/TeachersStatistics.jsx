@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addFavorite, removeFavorite } from "../../redux/favorites/slice";
 import { selectFavorites } from "../../redux/favorites/selectors";
 import ModalLogin from "../ModalLogin/ModalLogin";
-import { useModal } from "../../context";
+import { useModal } from "../../context/useModal";
 import { selectIsLoggedIn, selectUser } from "../../redux/auth/selectors";
 import { useEffect } from "react";
 import { loadFavoritesAsync } from "../../firebaseHelpers/firebaseFavorites";

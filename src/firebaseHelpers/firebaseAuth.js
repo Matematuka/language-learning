@@ -7,7 +7,7 @@ import {
 import { ref, set, get } from "firebase/database";
 import { auth, db } from "../firebase";
 import { useNavigate } from "react-router-dom";
-import { useModal } from "../context";
+import { useModal } from "../context/useModal";
 import { useDispatch } from "react-redux";
 import { logout, setUser } from "../redux/auth/slice";
 import { loadFavorites } from "./firebaseFavorites";
