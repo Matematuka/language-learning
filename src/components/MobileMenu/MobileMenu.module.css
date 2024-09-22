@@ -1,0 +1,126 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -2%;
+  text-align: left;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+.burger {
+  display: block;
+  background: none;
+  border: none;
+}
+
+.mobileMenu {
+  position: fixed;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: var(--primary-white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.iconClose {
+  position: absolute;
+  top: 18px;
+  right: 32px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  outline: none;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+.authList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.loginBtn {
+  font-family: var(--primary-font-family);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: transparent;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--light-orange-color);
+}
+
+.userWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 16px;
+}
+
+.userName {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.name {
+  color: var(--orange-color);
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
