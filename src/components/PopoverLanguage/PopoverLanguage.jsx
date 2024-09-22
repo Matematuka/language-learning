@@ -14,11 +14,11 @@ const PopoverLanguage = ({
   const popoverRef = useRef(null);
 
   useEffect(() => {
-    const handleOutsideClick = (e) => {
+    const handleOutsideClick = (evt) => {
       if (
-        !restrictionClick(e) &&
+        !restrictionClick(evt) &&
         popoverRef.current &&
-        !popoverRef.current.contains(e.target)
+        !popoverRef.current.contains(evt.target)
       ) {
         closePopover();
       }

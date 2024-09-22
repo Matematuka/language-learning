@@ -16,11 +16,11 @@ export const useModal = () => useContext(modalContext);
 export const ModalProvider = ({ children }) => {
   const [modalContent, setModalContent] = useState(null);
   const backdropRef = useRef(null);
-  const closeModal = useCallback((e) => {
+  const closeModal = useCallback((evt) => {
     if (
-      (e && e.target === e.currentTarget) ||
-      (e && e.code === "Escape") ||
-      (e && e.type === "submit")
+      (evt && evt.target === evt.currentTarget) ||
+      (evt && evt.code === "Escape") ||
+      (evt && evt.type === "submit")
     ) {
       document.body.style.overflow = "visible";
       if (backdropRef.current !== null) {

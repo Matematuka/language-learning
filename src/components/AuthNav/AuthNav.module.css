@@ -1,0 +1,62 @@
+.wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.loginBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--light-blue-color);
+  transition: stroke var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.loginBtn:hover .icon {
+  stroke: var(--dark-blue-color);
+}
+
+.registerBtn {
+  padding: 14px 39px;
+  border-radius: 12px;
+  background: var(--primary-black-color);
+  color: var(--primary-white-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.userWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.userName {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.name {
+  color: var(--primary-black-color);
+  padding-right: 10px;
+  border-right: 2px solid rgba(18, 20, 23, 0.2);
+}

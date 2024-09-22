@@ -1,0 +1,113 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.paragraph {
+  color: var(--primary-grey-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.statisticsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 90px;
+    margin-left: auto;
+  }
+}
+
+.statisticsItem {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.statisticsItem::after {
+  position: absolute;
+  right: -16px;
+  height: 16px;
+  width: 1px;
+  content: "";
+  background-color: rgba(18, 20, 23, 0.2);
+}
+
+.statisticsItem:last-child::after {
+  display: none;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.statisticsText {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.price {
+  color: var(--primary-green-color);
+}
+
+.addToFavoritesBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+
+  @media screen and (min-width: 768px) {
+    top: 24px;
+    right: 24px;
+  }
+}
+
+.addToFavoritesBtn:hover .iconHeart {
+  fill: var(--light-orange-color);
+  stroke: var(--light-orange-color);
+}
+
+.iconHeart {
+  width: 26px;
+  height: 26px;
+  pointer-events: none;
+  stroke: black;
+  fill: none;
+  transition: all var(--transition-duration) var(--transition-timing-function);
+}
+
+.favorites {
+  fill: var(--orange-color);
+  stroke: var(--orange-color);
+}

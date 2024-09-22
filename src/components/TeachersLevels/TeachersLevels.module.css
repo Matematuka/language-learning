@@ -1,0 +1,25 @@
+.levelsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.levelsItem {
+  padding: 8px 12px;
+  box-sizing: border-box;
+  border: 1px solid rgba(18, 20, 23, 0.2);
+  border-radius: 35px;
+  transition: all var(--transition-duration) var(--transition-timing-function);
+}
+
+.activeFilter {
+  background-color: var(--orange-color);
+  border-color: var(--orange-color);
+}
+
+.paragraph {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+}
