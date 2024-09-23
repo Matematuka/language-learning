@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { useState } from "react";
-import { useModal } from "../../context/useModal.js";
+import { useModal } from "../../context/useModal";
 
 const BookingForm = () => {
   const [selectedReason, setSelectedReason] = useState("");

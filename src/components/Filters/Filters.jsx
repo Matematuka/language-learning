@@ -8,7 +8,7 @@ import { resetFilters } from "../../redux/filter/slice";
 const Filters = () => {
   const dispatch = useDispatch();
 
-  const handleReset = () => {
+  const handleRefresh = () => {
     dispatch(resetFilters());
   };
 
@@ -17,8 +17,8 @@ const Filters = () => {
       <FiltersByLanguage />
       <FiltersByKnowledge />
       <FiltersByPrice />
-      <button type="button" className={css.btn} onClick={handleReset}>
-        Reset
+      <button type="button" className={css.btn} onClick={handleRefresh}>
+        Refresh
       </button>
     </div>
   );

@@ -8,7 +8,6 @@ export const modalContext = createContext();
 export const ModalProvider = ({ children }) => {
   const [modalContent, setModalContent] = useState(null);
   const backdropRef = useRef(null);
-
   const closeModal = useCallback((evt) => {
     if (
       (evt && evt.target === evt.currentTarget) ||
@@ -40,6 +39,9 @@ export const ModalProvider = ({ children }) => {
   const openModal = (content) => {
     document.body.style.overflow = "hidden";
     setModalContent(content);
+    setTimeout(() => {
+      backdropRef.current.style.opacity = 1;
+    }, 0);
   };
 
   return (

@@ -20,7 +20,8 @@
 .icon {
   width: 20px;
   height: 20px;
-  stroke: var(--peach-color);
+  fill: none;
+  stroke: var(--light-orange-color);
   transition: stroke var(--transition-duration)
     var(--transition-timing-function);
 }
@@ -56,7 +57,7 @@
 }
 
 .name {
-  color: var(--primary-black-color);
+  color: var(--orange-color);
   padding-right: 10px;
   border-right: 2px solid rgba(18, 20, 23, 0.2);
 }

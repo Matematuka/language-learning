@@ -4,7 +4,7 @@ import TeachersLevels from "../TeachersLevels/TeachersLevels";
 import TeachersShortInfo from "../TeachersShortInfo/TeachersShortInfo";
 import TeachersStatistics from "../TeachersStatistics/TeachersStatistics";
 import css from "./TeachersItem.module.css";
-import { useModal } from "../../context/useModal";
+import { useModal } from "../../context";
 import ModalBooking from "../ModalBooking/ModalBooking";
 
 const TeachersItem = ({ data }) => {

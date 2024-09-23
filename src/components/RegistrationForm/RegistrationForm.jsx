@@ -34,10 +34,10 @@ const RegistrationForm = () => {
     },
   });
 
-  const onSubmit = (data, e) => {
-    e.preventDefault();
+  const onSubmit = (data, evt) => {
+    evt.preventDefault();
     registration(data);
-    closeModal(e);
+    closeModal(evt);
     reset();
   };
 

@@ -119,7 +119,7 @@ input::placeholder {
 }
 
 .btn:hover {
-  background-color: var(--light-orange-color);
+  background-color: var(--orange-color);
 }
 
 .errorMessage {

@@ -1,38 +1,36 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import css from "./PopoverLanguage.module.css";
 import clsx from "clsx";
+import { useDispatch } from "react-redux";
+import { changeLanguageFilter } from "../../redux/filter/slice";
 
-const LANGUAGES = ["French", "English", "German", "Ukrainian", "Polish"];
+const LANGUAGES = [
+  "French",
+  "English",
+  "German",
+  "Spanish",
+  "Mandarin Chinese",
+];
 
 const PopoverLanguage = ({
   closePopover,
-  restrictionClick,
   isVisible,
-  setChosenLanguage,
   chosenLanguage,
+  handleOutsideClick,
+  popoverRef,
 }) => {
-  const popoverRef = useRef(null);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const handleOutsideClick = (evt) => {
-      if (
-        !restrictionClick(evt) &&
-        popoverRef.current &&
-        !popoverRef.current.contains(evt.target)
-      ) {
-        closePopover();
-      }
-    };
-
     document.addEventListener("mousedown", handleOutsideClick);
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
-  }, [closePopover, restrictionClick]);
+  }, [handleOutsideClick]);
 
   const handleChangeLanguage = (language) => {
     closePopover();
-    setChosenLanguage(language);
+    dispatch(changeLanguageFilter(language));
   };
 
   return (

@@ -34,14 +34,14 @@
   text-align: center;
   padding: 16px;
   border-radius: 12px;
-  border: 1px solid var(--orange-color);
-  background: var(--orange-color);
+  border: 1px solid var(--light-orange-color);
+  background: var(--light-orange-color);
   margin-top: 22px;
   transition: all var(--transition-duration) var(--transition-timing-function);
 }
 
 .btn:hover {
-  background-color: var(--light-orange-color);
+  background-color: var(--orange-color);
 }
 
 .btnNo {

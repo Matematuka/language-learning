@@ -20,7 +20,7 @@ const ModalLogin = () => {
       </div>
       <LoginForm />
       <p className={css.textRegister}>
-        Don&apost have an account?
+        Don&apos;t have an account?
         <button className={css.registerBtn} onClick={handleBtnClick}>
           Register now
         </button>

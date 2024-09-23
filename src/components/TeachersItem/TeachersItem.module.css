@@ -51,8 +51,10 @@
   position: absolute;
   top: 8px;
   right: 16px;
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
+  fill: rgb(71, 150, 7);
+  stroke: rgba(71, 150, 7);
 
   @media screen and (min-width: 768px) {
     top: 12px;

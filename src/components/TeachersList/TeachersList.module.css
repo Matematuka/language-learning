@@ -22,10 +22,10 @@
   line-height: 28px;
   text-align: left;
   border-radius: 12px;
-  background-color: var(--orange-color);
+  background-color: var(--light-orange-color);
   transition: all var(--transition-duration) var(--transition-timing-function);
 }
 
 .loadMoreBtn:hover {
-  background-color: var(--light-orange-color);
+  background-color: var(--orange-color);
 }

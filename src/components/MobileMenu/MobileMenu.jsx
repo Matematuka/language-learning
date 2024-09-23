@@ -42,7 +42,7 @@ const MobileMenu = () => {
         <p className={css.title}>LearnLingo</p>
       </NavLink>
       <button className={css.burger} onClick={toggleMenu}>
-        <Icon iconId="icon-burger" className={css.icon} />
+        <Icon iconId="icon-menu" className={css.icon} />
       </button>
       {isOpen && (
         <div className={css.mobileMenu}>

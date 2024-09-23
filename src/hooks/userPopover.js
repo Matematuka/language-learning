@@ -26,8 +26,8 @@ export const usePopover = () => {
     }, 100);
   };
 
-  const handleOutsideClick = (evt) => {
-    if (popoverRef.current && !popoverRef.current.contains(evt.target)) {
+  const handleOutsideClick = (e) => {
+    if (popoverRef.current && !popoverRef.current.contains(e.target)) {
       handleClosePopover();
     }
   };

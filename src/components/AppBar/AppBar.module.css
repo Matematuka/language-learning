@@ -6,20 +6,16 @@
   max-height: 48px;
   margin: 20px 0;
   background: var(--primary-white-color);
-}
 
-@media screen and (min-width: 768px) {
-  .wrapperMain {
+  @media screen and (min-width: 768px) {
     justify-content: center;
   }
 }
 
 .wrapper {
   display: none;
-}
 
-@media screen and (min-width: 768px) {
-  .wrapper {
+  @media screen and (min-width: 768px) {
     width: 100%;
     display: flex;
     justify-content: space-between;

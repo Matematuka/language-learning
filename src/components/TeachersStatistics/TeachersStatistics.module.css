@@ -65,6 +65,8 @@
 }
 
 .icon {
+  fill: none;
+  stroke: var(--primary-black-color);
   width: 16px;
   height: 16px;
 }
