@@ -8,7 +8,7 @@ export const fetchTeachers = createAsyncThunk(
   "teachers/fetchAll",
   async (_, thunkAPI) => {
     try {
-      const response = await axios.get("/teachers.json");
+      const response = await axios.get("/teachers");
       const data = response.data;
 
       if (!data) {
