@@ -1,8 +1,37 @@
-# React + Vite
+# Language Learning Tutors Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Опис
 
-Currently, two official plugins are available:
+Цей веб-застосунок призначений для компанії, яка надає послуги викладачів з вивчення мов онлайн. Користувачі можуть переглядати викладачів, фільтрувати їх за мовою викладання, рівнем знань учнів та ціною за заняття. Також можна додавати викладачів до списку "Favorites". Застосунок підтримує авторизацію користувачів через Firebase і використовує Firebase Realtime Database для зберігання даних про викладачів.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Функціональність
+
+- **Home Page**: Головна сторінка з інформацією про переваги компанії та посиланням на сторінку "Teachers".
+- **Teachers Page**: Сторінка з переліком викладачів. Можна фільтрувати викладачів за мовою викладання, рівнем знань учня і ціною за годину.
+- **Favorites Page**: Сторінка зі списком викладачів, яких користувач додав у "Favorites" для швидкого доступу.
+- **Авторизація**: Firebase Authentication дозволяє користувачам увійти або зареєструватися для використання додаткових функцій.
+- **База даних**: Використовується Firebase Realtime Database для зберігання інформації про викладачів.
+
+## Технології
+
+- **React**: Використовується для створення інтерфейсу користувача на основі компонентів.
+- **Vite**: Швидкий інструмент для збірки та розробки.
+- **Firebase**: Для авторизації користувачів і зберігання даних у реальній базі даних.
+- **CSS**: Стилі написані з урахуванням адаптивності для різних пристроїв (від 320px до 1440px).
+
+## Встановлення та налаштування
+
+### 1. Клонування репозиторію
+
+Для початку, клонувати репозиторій у вашу локальну систему:
+
+git clone https://github.com/your-repository.git
+cd your-repository
+
+### 2. Встановлення залежностей
+
+npm install
+
+### 4. Запуск
+
+npm run dev
