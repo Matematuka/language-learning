@@ -26,7 +26,6 @@
 Для початку, клонувати репозиторій у вашу локальну систему:
 
 git clone https://github.com/your-repository.git
-cd your-repository
 
 ### 2. Встановлення залежностей
 
