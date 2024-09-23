@@ -3,14 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAbQuAHmB5tM8AtoGIpaprvf7SH9k2WAzg",
-  authDomain: "simple-learning-37aac.firebaseapp.com",
-  databaseURL:
-    "https://simple-learning-37aac-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "simple-learning-37aac",
-  storageBucket: "simple-learning-37aac.appspot.com",
-  messagingSenderId: "479050561342",
-  appId: "1:479050561342:web:e5c5ebf9ef30f14e725e6f",
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_DATABASE_URL,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
