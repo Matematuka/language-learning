@@ -1,0 +1,1 @@
+{"version":3,"file":"NotFoundPage-fOV6lEXD.js","sources":["../../src/pages/NotFoundPage/NotFoundPage.jsx"],"sourcesContent":["const NotFoundPage = () => {\r\n  return <div>NotFoundPage</div>;\r\n};\r\n\r\nexport default NotFoundPage;\r\n"],"names":["NotFoundPage","jsx"],"mappings":"wCAAA,MAAMA,EAAe,IACZC,EAAA,IAAC,OAAI,SAAY,cAAA,CAAA"}
